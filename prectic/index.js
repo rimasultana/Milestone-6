@@ -51,3 +51,16 @@
       }
     }, 3000);
   }
+
+  function getCertificate(){
+    console.log("Prepareing your certificate");
+
+
+    setTimeout(function(){
+      console.log("Congrats! you got a certificate");
+    }, 1000)
+  }
+
+enroll(function(){
+  progress(getCertificate);
+})
