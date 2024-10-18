@@ -4,3 +4,10 @@ function loadUser(){
     .then(data => console.log(data))
     .catch(err => console.log(err))
 }
+
+function loadUserAsync(){
+    const res = await     fetch('https://jsonplaceholder.typicode.com/users');
+    const data = await res.json();
+    console.log(data)
+
+}
